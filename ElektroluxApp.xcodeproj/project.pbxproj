@@ -1,0 +1,768 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2AD9DC2028216BBF00574901 /* ElektroluxAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD9DC1F28216BBF00574901 /* ElektroluxAppApp.swift */; };
+		2AD9DC2228216BBF00574901 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD9DC2128216BBF00574901 /* ContentView.swift */; };
+		2AD9DC2428216BC000574901 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AD9DC2328216BC000574901 /* Assets.xcassets */; };
+		2AD9DC2728216BC000574901 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AD9DC2628216BC000574901 /* Preview Assets.xcassets */; };
+		2AD9DC2928216BC000574901 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD9DC2828216BC000574901 /* Persistence.swift */; };
+		2AD9DC2C28216BC000574901 /* ElektroluxApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2AD9DC2A28216BC000574901 /* ElektroluxApp.xcdatamodeld */; };
+		2AD9DC3628216BC100574901 /* ElektroluxAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD9DC3528216BC100574901 /* ElektroluxAppTests.swift */; };
+		2AD9DC4028216BC100574901 /* ElektroluxAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD9DC3F28216BC100574901 /* ElektroluxAppUITests.swift */; };
+		2AD9DC4228216BC100574901 /* ElektroluxAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD9DC4128216BC100574901 /* ElektroluxAppUITestsLaunchTests.swift */; };
+		2AD9DC5728216FFC00574901 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD9DC5628216FFC00574901 /* Constants.swift */; };
+		2AD9DC592821782C00574901 /* FlickrListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD9DC582821782C00574901 /* FlickrListView.swift */; };
+		2AD9DC5B2821790200574901 /* FlickrDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD9DC5A2821790200574901 /* FlickrDetailView.swift */; };
+		2AD9DC5F2821798800574901 /* FlickrListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD9DC5E2821798800574901 /* FlickrListViewModel.swift */; };
+		2AD9DC61282179A500574901 /* FlickrListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD9DC60282179A500574901 /* FlickrListModel.swift */; };
+		2AD9DC632821843300574901 /* URLRequest+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD9DC622821843300574901 /* URLRequest+Extensions.swift */; };
+		2AD9DC65282187BE00574901 /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD9DC64282187BE00574901 /* Services.swift */; };
+		2AD9DC672821898A00574901 /* FlickrHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD9DC662821898A00574901 /* FlickrHelper.swift */; };
+		2AD9DC6928218CD900574901 /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD9DC6828218CD900574901 /* NetworkMonitor.swift */; };
+		2AD9DC6E28218EEB00574901 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD9DC6D28218EEB00574901 /* SearchBar.swift */; };
+		2AD9DC702821B55700574901 /* FlicktListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD9DC6F2821B55700574901 /* FlicktListCell.swift */; };
+		2AD9DC732821BC3000574901 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD9DC722821BC3000574901 /* ImageCache.swift */; };
+		2AD9DC7E28228FC100574901 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 2AD9DC7D28228FC100574901 /* Kingfisher */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2AD9DC3228216BC100574901 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2AD9DC1428216BBF00574901 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2AD9DC1B28216BBF00574901;
+			remoteInfo = ElektroluxApp;
+		};
+		2AD9DC3C28216BC100574901 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2AD9DC1428216BBF00574901 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2AD9DC1B28216BBF00574901;
+			remoteInfo = ElektroluxApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2AD9DC1C28216BBF00574901 /* ElektroluxApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ElektroluxApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AD9DC1F28216BBF00574901 /* ElektroluxAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElektroluxAppApp.swift; sourceTree = "<group>"; };
+		2AD9DC2128216BBF00574901 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2AD9DC2328216BC000574901 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2AD9DC2628216BC000574901 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2AD9DC2828216BC000574901 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		2AD9DC2B28216BC000574901 /* ElektroluxApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ElektroluxApp.xcdatamodel; sourceTree = "<group>"; };
+		2AD9DC3128216BC100574901 /* ElektroluxAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ElektroluxAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AD9DC3528216BC100574901 /* ElektroluxAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElektroluxAppTests.swift; sourceTree = "<group>"; };
+		2AD9DC3B28216BC100574901 /* ElektroluxAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ElektroluxAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AD9DC3F28216BC100574901 /* ElektroluxAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElektroluxAppUITests.swift; sourceTree = "<group>"; };
+		2AD9DC4128216BC100574901 /* ElektroluxAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElektroluxAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2AD9DC5628216FFC00574901 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		2AD9DC582821782C00574901 /* FlickrListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrListView.swift; sourceTree = "<group>"; };
+		2AD9DC5A2821790200574901 /* FlickrDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrDetailView.swift; sourceTree = "<group>"; };
+		2AD9DC5E2821798800574901 /* FlickrListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrListViewModel.swift; sourceTree = "<group>"; };
+		2AD9DC60282179A500574901 /* FlickrListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrListModel.swift; sourceTree = "<group>"; };
+		2AD9DC622821843300574901 /* URLRequest+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+Extensions.swift"; sourceTree = "<group>"; };
+		2AD9DC64282187BE00574901 /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
+		2AD9DC662821898A00574901 /* FlickrHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrHelper.swift; sourceTree = "<group>"; };
+		2AD9DC6828218CD900574901 /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
+		2AD9DC6D28218EEB00574901 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		2AD9DC6F2821B55700574901 /* FlicktListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlicktListCell.swift; sourceTree = "<group>"; };
+		2AD9DC722821BC3000574901 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2AD9DC1928216BBF00574901 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AD9DC7E28228FC100574901 /* Kingfisher in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AD9DC2E28216BC100574901 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AD9DC3828216BC100574901 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2AD9DC1328216BBF00574901 = {
+			isa = PBXGroup;
+			children = (
+				2AD9DC1E28216BBF00574901 /* ElektroluxApp */,
+				2AD9DC3428216BC100574901 /* ElektroluxAppTests */,
+				2AD9DC3E28216BC100574901 /* ElektroluxAppUITests */,
+				2AD9DC1D28216BBF00574901 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2AD9DC1D28216BBF00574901 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2AD9DC1C28216BBF00574901 /* ElektroluxApp.app */,
+				2AD9DC3128216BC100574901 /* ElektroluxAppTests.xctest */,
+				2AD9DC3B28216BC100574901 /* ElektroluxAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2AD9DC1E28216BBF00574901 /* ElektroluxApp */ = {
+			isa = PBXGroup;
+			children = (
+				2AD9DC5528216BF600574901 /* App */,
+				2AD9DC5428216BEE00574901 /* Extensions */,
+				2AD9DC5328216BEA00574901 /* Utils */,
+				2AD9DC5228216BE500574901 /* ViewModel */,
+				2AD9DC5128216BE100574901 /* Model */,
+				2AD9DC5028216BDC00574901 /* View */,
+				2AD9DC4F28216BD900574901 /* Data */,
+				2AD9DC4E28216BCF00574901 /* DatabaseManagement */,
+				2AD9DC2528216BC000574901 /* Preview Content */,
+			);
+			path = ElektroluxApp;
+			sourceTree = "<group>";
+		};
+		2AD9DC2528216BC000574901 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				2AD9DC2628216BC000574901 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2AD9DC3428216BC100574901 /* ElektroluxAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				2AD9DC3528216BC100574901 /* ElektroluxAppTests.swift */,
+			);
+			path = ElektroluxAppTests;
+			sourceTree = "<group>";
+		};
+		2AD9DC3E28216BC100574901 /* ElektroluxAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2AD9DC3F28216BC100574901 /* ElektroluxAppUITests.swift */,
+				2AD9DC4128216BC100574901 /* ElektroluxAppUITestsLaunchTests.swift */,
+			);
+			path = ElektroluxAppUITests;
+			sourceTree = "<group>";
+		};
+		2AD9DC4E28216BCF00574901 /* DatabaseManagement */ = {
+			isa = PBXGroup;
+			children = (
+				2AD9DC2A28216BC000574901 /* ElektroluxApp.xcdatamodeld */,
+				2AD9DC2828216BC000574901 /* Persistence.swift */,
+			);
+			path = DatabaseManagement;
+			sourceTree = "<group>";
+		};
+		2AD9DC4F28216BD900574901 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		2AD9DC5028216BDC00574901 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2AD9DC5D2821792C00574901 /* FlickrDetail */,
+				2AD9DC5C2821792100574901 /* FlickrList */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2AD9DC5128216BE100574901 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2AD9DC60282179A500574901 /* FlickrListModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2AD9DC5228216BE500574901 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2AD9DC5E2821798800574901 /* FlickrListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		2AD9DC5328216BEA00574901 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				2AD9DC6828218CD900574901 /* NetworkMonitor.swift */,
+				2AD9DC662821898A00574901 /* FlickrHelper.swift */,
+				2AD9DC6A28218D0A00574901 /* Items */,
+				2AD9DC5628216FFC00574901 /* Constants.swift */,
+				2AD9DC64282187BE00574901 /* Services.swift */,
+				2AD9DC722821BC3000574901 /* ImageCache.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		2AD9DC5428216BEE00574901 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2AD9DC622821843300574901 /* URLRequest+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2AD9DC5528216BF600574901 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				2AD9DC1F28216BBF00574901 /* ElektroluxAppApp.swift */,
+				2AD9DC2128216BBF00574901 /* ContentView.swift */,
+				2AD9DC2328216BC000574901 /* Assets.xcassets */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		2AD9DC5C2821792100574901 /* FlickrList */ = {
+			isa = PBXGroup;
+			children = (
+				2AD9DC582821782C00574901 /* FlickrListView.swift */,
+				2AD9DC6F2821B55700574901 /* FlicktListCell.swift */,
+			);
+			path = FlickrList;
+			sourceTree = "<group>";
+		};
+		2AD9DC5D2821792C00574901 /* FlickrDetail */ = {
+			isa = PBXGroup;
+			children = (
+				2AD9DC5A2821790200574901 /* FlickrDetailView.swift */,
+			);
+			path = FlickrDetail;
+			sourceTree = "<group>";
+		};
+		2AD9DC6A28218D0A00574901 /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				2AD9DC6D28218EEB00574901 /* SearchBar.swift */,
+			);
+			path = Items;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2AD9DC1B28216BBF00574901 /* ElektroluxApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2AD9DC4528216BC100574901 /* Build configuration list for PBXNativeTarget "ElektroluxApp" */;
+			buildPhases = (
+				2AD9DC1828216BBF00574901 /* Sources */,
+				2AD9DC1928216BBF00574901 /* Frameworks */,
+				2AD9DC1A28216BBF00574901 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ElektroluxApp;
+			packageProductDependencies = (
+				2AD9DC7D28228FC100574901 /* Kingfisher */,
+			);
+			productName = ElektroluxApp;
+			productReference = 2AD9DC1C28216BBF00574901 /* ElektroluxApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2AD9DC3028216BC100574901 /* ElektroluxAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2AD9DC4828216BC100574901 /* Build configuration list for PBXNativeTarget "ElektroluxAppTests" */;
+			buildPhases = (
+				2AD9DC2D28216BC100574901 /* Sources */,
+				2AD9DC2E28216BC100574901 /* Frameworks */,
+				2AD9DC2F28216BC100574901 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2AD9DC3328216BC100574901 /* PBXTargetDependency */,
+			);
+			name = ElektroluxAppTests;
+			productName = ElektroluxAppTests;
+			productReference = 2AD9DC3128216BC100574901 /* ElektroluxAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2AD9DC3A28216BC100574901 /* ElektroluxAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2AD9DC4B28216BC100574901 /* Build configuration list for PBXNativeTarget "ElektroluxAppUITests" */;
+			buildPhases = (
+				2AD9DC3728216BC100574901 /* Sources */,
+				2AD9DC3828216BC100574901 /* Frameworks */,
+				2AD9DC3928216BC100574901 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2AD9DC3D28216BC100574901 /* PBXTargetDependency */,
+			);
+			name = ElektroluxAppUITests;
+			productName = ElektroluxAppUITests;
+			productReference = 2AD9DC3B28216BC100574901 /* ElektroluxAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2AD9DC1428216BBF00574901 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					2AD9DC1B28216BBF00574901 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+					2AD9DC3028216BC100574901 = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = 2AD9DC1B28216BBF00574901;
+					};
+					2AD9DC3A28216BC100574901 = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = 2AD9DC1B28216BBF00574901;
+					};
+				};
+			};
+			buildConfigurationList = 2AD9DC1728216BBF00574901 /* Build configuration list for PBXProject "ElektroluxApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2AD9DC1328216BBF00574901;
+			packageReferences = (
+				2AD9DC7C28228FC100574901 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
+			productRefGroup = 2AD9DC1D28216BBF00574901 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2AD9DC1B28216BBF00574901 /* ElektroluxApp */,
+				2AD9DC3028216BC100574901 /* ElektroluxAppTests */,
+				2AD9DC3A28216BC100574901 /* ElektroluxAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2AD9DC1A28216BBF00574901 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AD9DC2728216BC000574901 /* Preview Assets.xcassets in Resources */,
+				2AD9DC2428216BC000574901 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AD9DC2F28216BC100574901 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AD9DC3928216BC100574901 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2AD9DC1828216BBF00574901 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AD9DC672821898A00574901 /* FlickrHelper.swift in Sources */,
+				2AD9DC5728216FFC00574901 /* Constants.swift in Sources */,
+				2AD9DC732821BC3000574901 /* ImageCache.swift in Sources */,
+				2AD9DC6E28218EEB00574901 /* SearchBar.swift in Sources */,
+				2AD9DC2928216BC000574901 /* Persistence.swift in Sources */,
+				2AD9DC2228216BBF00574901 /* ContentView.swift in Sources */,
+				2AD9DC65282187BE00574901 /* Services.swift in Sources */,
+				2AD9DC632821843300574901 /* URLRequest+Extensions.swift in Sources */,
+				2AD9DC2C28216BC000574901 /* ElektroluxApp.xcdatamodeld in Sources */,
+				2AD9DC702821B55700574901 /* FlicktListCell.swift in Sources */,
+				2AD9DC592821782C00574901 /* FlickrListView.swift in Sources */,
+				2AD9DC2028216BBF00574901 /* ElektroluxAppApp.swift in Sources */,
+				2AD9DC6928218CD900574901 /* NetworkMonitor.swift in Sources */,
+				2AD9DC5B2821790200574901 /* FlickrDetailView.swift in Sources */,
+				2AD9DC5F2821798800574901 /* FlickrListViewModel.swift in Sources */,
+				2AD9DC61282179A500574901 /* FlickrListModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AD9DC2D28216BC100574901 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AD9DC3628216BC100574901 /* ElektroluxAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AD9DC3728216BC100574901 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AD9DC4028216BC100574901 /* ElektroluxAppUITests.swift in Sources */,
+				2AD9DC4228216BC100574901 /* ElektroluxAppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2AD9DC3328216BC100574901 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2AD9DC1B28216BBF00574901 /* ElektroluxApp */;
+			targetProxy = 2AD9DC3228216BC100574901 /* PBXContainerItemProxy */;
+		};
+		2AD9DC3D28216BC100574901 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2AD9DC1B28216BBF00574901 /* ElektroluxApp */;
+			targetProxy = 2AD9DC3C28216BC100574901 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2AD9DC4328216BC100574901 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2AD9DC4428216BC100574901 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2AD9DC4628216BC100574901 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ElektroluxApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.seyhan.can.mehmet.ElektroluxApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2AD9DC4728216BC100574901 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ElektroluxApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.seyhan.can.mehmet.ElektroluxApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2AD9DC4928216BC100574901 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.seyhan.can.mehmet.ElektroluxAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ElektroluxApp.app/ElektroluxApp";
+			};
+			name = Debug;
+		};
+		2AD9DC4A28216BC100574901 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.seyhan.can.mehmet.ElektroluxAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ElektroluxApp.app/ElektroluxApp";
+			};
+			name = Release;
+		};
+		2AD9DC4C28216BC100574901 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.seyhan.can.mehmet.ElektroluxAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ElektroluxApp;
+			};
+			name = Debug;
+		};
+		2AD9DC4D28216BC100574901 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.seyhan.can.mehmet.ElektroluxAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ElektroluxApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2AD9DC1728216BBF00574901 /* Build configuration list for PBXProject "ElektroluxApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AD9DC4328216BC100574901 /* Debug */,
+				2AD9DC4428216BC100574901 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2AD9DC4528216BC100574901 /* Build configuration list for PBXNativeTarget "ElektroluxApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AD9DC4628216BC100574901 /* Debug */,
+				2AD9DC4728216BC100574901 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2AD9DC4828216BC100574901 /* Build configuration list for PBXNativeTarget "ElektroluxAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AD9DC4928216BC100574901 /* Debug */,
+				2AD9DC4A28216BC100574901 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2AD9DC4B28216BC100574901 /* Build configuration list for PBXNativeTarget "ElektroluxAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AD9DC4C28216BC100574901 /* Debug */,
+				2AD9DC4D28216BC100574901 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2AD9DC7C28228FC100574901 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2AD9DC7D28228FC100574901 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2AD9DC7C28228FC100574901 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		2AD9DC2A28216BC000574901 /* ElektroluxApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2AD9DC2B28216BC000574901 /* ElektroluxApp.xcdatamodel */,
+			);
+			currentVersion = 2AD9DC2B28216BC000574901 /* ElektroluxApp.xcdatamodel */;
+			path = ElektroluxApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 2AD9DC1428216BBF00574901 /* Project object */;
+}
