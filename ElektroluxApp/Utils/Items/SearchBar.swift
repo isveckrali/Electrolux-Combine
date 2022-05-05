@@ -27,7 +27,7 @@ struct SearchBar: View {
                             .foregroundColor(.gray)
                             .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
                             .padding(.leading, 8)
-                    }
+                    }//: HSTACK
                 )
         } //: HStack
         .padding(.horizontal, 10)

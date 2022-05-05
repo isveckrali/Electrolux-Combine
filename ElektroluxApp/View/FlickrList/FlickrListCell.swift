@@ -11,12 +11,17 @@ struct FlickrListCell: View {
     //MARK: -PROPERTIES
     let photo: FlickrViewModel
     
+    init(photo: FlickrViewModel) {
+        self.photo = photo
+    }
+    
     //MARK: -FUNCS
     var body: some View {
         HStack(alignment: .top) {
             
             AsyncImage(url: URL(string: photo.urlToImage)) { image in
-                image.resizable()
+                image
+                    .resizable()
                     .frame(maxWidth: screenWidth / 3, maxHeight: screenWidth / 3)
             } placeholder: {
                 ProgressView("Loading...")

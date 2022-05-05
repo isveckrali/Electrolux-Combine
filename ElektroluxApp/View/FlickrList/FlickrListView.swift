@@ -22,49 +22,56 @@ struct FlickrListView: View {
     }
     
     
-    //MARK: -FUNC
+    //MARK: -FUNCS
     var body: some View {
         NavigationView {
-            VStack {
-                HStack {
-
-                    Spacer()
-                    // Downlading Button
-                    Button(action: {
-                        // download selected item content
-                        vm.downloadAndSaveImage(selectedItem: self.selectedItem)
-                    }, label: {
-                    Label("Save", systemImage: "")
+            ZStack {
+                VStack {
+                    HStack {
+                        Spacer()
+                        // Downlading Button
+                        Button(action: {
+                            // download selected item content
+                            vm.downloadAndSaveImage(selectedItem: self.selectedItem)
+                            vm.isDownloaded = true
                             
-                    })
-                    .disabled(selectedItem == nil || vm.isDownloading ? true : false)
-                    .frame(alignment: .trailing)
-                    .padding(.trailing, 32)
-                } //: HStack
-                SearchBar(text: $vm.searchText)
-                ScrollView {
-                    LazyVGrid(columns: gridItemLayout, spacing: 20) {
-                        ForEach(vm.photos, id: \.id) { item in
-                            FlickrListCell(photo: item)
-                                .opacity(self.selectedItem?.id == item.id ? 0.5 : 1)
-                                .onTapGesture {
-                                    self.selectedItem = item
-                                }
-                        }//: LOOP
-                    }//: LAZYVGRID
-                } //: SCROLLVIEW
-                if vm.isDownloading{
-                    ProgressView("Downloading...")
-                        .frame(maxWidth: 100, maxHeight: 100)
+                        }, label: {
+                            Label("Save", systemImage: "")
+                            
+                        })
+                        .disabled(selectedItem == nil || vm.isDownloading ? true : false)
+                        .frame(alignment: .trailing)
+                        .padding(.trailing, 32)
+                    } //: HStack
+                    SearchBar(text: $vm.searchText)
+                    ScrollView {
+                        LazyVGrid(columns: gridItemLayout, spacing: 20) {
+                            ForEach(vm.photos, id: \.id) { item in
+                                FlickrListCell(photo: item)
+                                    .opacity(self.selectedItem?.id == item.id ? 0.5 : 1)
+                                    .onTapGesture {
+                                        self.selectedItem = item
+                                    }
+                            }//: LOOP
+                        }//: LAZYVGRID
+                    } //: SCROLLVIEW
+                    if vm.isDownloading{
+                        ProgressView("Downloading...")
+                            .frame(maxWidth: 100, maxHeight: 100)
+                    }
+                }//: VSTACK
+                .navigationTitle("Flickr")
+                .navigationBarTitleDisplayMode(.inline)
+                
+                
+                if vm.isDownloaded {
+                    CustomAlertView(alertContent: "Image downloaded", isDownloaded: $vm.isDownloaded)
                 }
-            }//VSTACK
-            .navigationTitle("Flickr")
-            .navigationBarTitleDisplayMode(.inline)
-            
-            
+            }//: ZSTACK
             
         }// NavigationView
         .navigationViewStyle(.stack)
+        
     }
 }
 
