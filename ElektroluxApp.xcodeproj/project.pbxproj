@@ -26,7 +26,7 @@
 		2AD9DC672821898A00574901 /* FlickrHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD9DC662821898A00574901 /* FlickrHelper.swift */; };
 		2AD9DC6928218CD900574901 /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD9DC6828218CD900574901 /* NetworkMonitor.swift */; };
 		2AD9DC6E28218EEB00574901 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD9DC6D28218EEB00574901 /* SearchBar.swift */; };
-		2AD9DC702821B55700574901 /* FlicktListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD9DC6F2821B55700574901 /* FlicktListCell.swift */; };
+		2AD9DC702821B55700574901 /* FlickrListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD9DC6F2821B55700574901 /* FlickrListCell.swift */; };
 		2AD9DC732821BC3000574901 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD9DC722821BC3000574901 /* ImageCache.swift */; };
 		2AD9DC7E28228FC100574901 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 2AD9DC7D28228FC100574901 /* Kingfisher */; };
 /* End PBXBuildFile section */
@@ -71,7 +71,7 @@
 		2AD9DC662821898A00574901 /* FlickrHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrHelper.swift; sourceTree = "<group>"; };
 		2AD9DC6828218CD900574901 /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
 		2AD9DC6D28218EEB00574901 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
-		2AD9DC6F2821B55700574901 /* FlicktListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlicktListCell.swift; sourceTree = "<group>"; };
+		2AD9DC6F2821B55700574901 /* FlickrListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrListCell.swift; sourceTree = "<group>"; };
 		2AD9DC722821BC3000574901 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -238,7 +238,7 @@
 			isa = PBXGroup;
 			children = (
 				2AD9DC582821782C00574901 /* FlickrListView.swift */,
-				2AD9DC6F2821B55700574901 /* FlicktListCell.swift */,
+				2AD9DC6F2821B55700574901 /* FlickrListCell.swift */,
 			);
 			path = FlickrList;
 			sourceTree = "<group>";
@@ -404,7 +404,7 @@
 				2AD9DC65282187BE00574901 /* Services.swift in Sources */,
 				2AD9DC632821843300574901 /* URLRequest+Extensions.swift in Sources */,
 				2AD9DC2C28216BC000574901 /* ElektroluxApp.xcdatamodeld in Sources */,
-				2AD9DC702821B55700574901 /* FlicktListCell.swift in Sources */,
+				2AD9DC702821B55700574901 /* FlickrListCell.swift in Sources */,
 				2AD9DC592821782C00574901 /* FlickrListView.swift in Sources */,
 				2AD9DC2028216BBF00574901 /* ElektroluxAppApp.swift in Sources */,
 				2AD9DC6928218CD900574901 /* NetworkMonitor.swift in Sources */,

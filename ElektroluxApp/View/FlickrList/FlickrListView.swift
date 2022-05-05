@@ -8,40 +8,60 @@
 import SwiftUI
 
 struct FlickrListView: View {
+    
     //MARK: - PROPERTIES
     private var gridItemLayout = [GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible())]
     @ObservedObject var vm = FlickrListViewModel()
+    @State var selectedItem: FlickrViewModel? {
+        didSet {
+            if selectedItem?.id == oldValue?.id {
+                selectedItem = nil
+            }
+            vm.stopDownload()
+        }
+    }
+    
     
     //MARK: -FUNC
     var body: some View {
         NavigationView {
             VStack {
                 HStack {
+
                     Spacer()
                     // Downlading Button
                     Button(action: {
-                        // download selected
+                        // download selected item content
+                        vm.downloadAndSaveImage(selectedItem: self.selectedItem)
                     }, label: {
                     Label("Save", systemImage: "")
+                            
                     })
+                    .disabled(selectedItem == nil || vm.isDownloading ? true : false)
                     .frame(alignment: .trailing)
                     .padding(.trailing, 32)
                 } //: HStack
                 SearchBar(text: $vm.searchText)
-
                 ScrollView {
                     LazyVGrid(columns: gridItemLayout, spacing: 20) {
                         ForEach(vm.photos, id: \.id) { item in
-                            NavigationLink(destination: FlickrDetailView(title: item.title)) {
-                                FlickrListCell(photo: item)
-                            }
+                            FlickrListCell(photo: item)
+                                .opacity(self.selectedItem?.id == item.id ? 0.5 : 1)
+                                .onTapGesture {
+                                    self.selectedItem = item
+                                }
                         }//: LOOP
                     }//: LAZYVGRID
                 } //: SCROLLVIEW
-                Spacer()
+                if vm.isDownloading{
+                    ProgressView("Downloading...")
+                        .frame(maxWidth: 100, maxHeight: 100)
+                }
             }//VSTACK
             .navigationTitle("Flickr")
             .navigationBarTitleDisplayMode(.inline)
+            
+            
             
         }// NavigationView
         .navigationViewStyle(.stack)

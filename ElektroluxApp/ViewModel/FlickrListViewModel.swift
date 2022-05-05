@@ -15,6 +15,8 @@ class FlickrListViewModel: ObservableObject {
     //MARK: -PROPERTIES
     @Published private (set) var photos: [FlickrViewModel] = []
     @Published var searchText: String = String()
+    @Published var isDownloading: Bool = false
+    private var imageCache = ImageCache.getImageCache()
     private var subscription: Set<AnyCancellable> = []
     private var cancellable: AnyCancellable?
 
@@ -64,6 +66,16 @@ class FlickrListViewModel: ObservableObject {
             print("flickrListModel \(flickrListModel)")
         }
         .store(in: &subscription)
+    }
+    
+    func downloadAndSaveImage(selectedItem: FlickrViewModel?) {
+        self.isDownloading.toggle()
+        //Download from cache or url and then change isDownloading parameters as true
+       // self.isDownloading = false
+    }
+    
+    func stopDownload() {
+        self.isDownloading = false
     }
 }
 
