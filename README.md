@@ -1,4 +1,4 @@
-<h1> Elektrolux App </h1>
+<h1> Electrolux App </h1>
 User is able to search & cache & save photo. While user interact an image it is hightlited.
 
 <h2>In Additional </h2>
